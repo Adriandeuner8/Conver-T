@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP TEMPERATURA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button id="click" class="click-hover" onclick="clickFunction()"> CONVER-T </button>
+    
+    <div id="input">
+        <input type="number" id="valor" placeholder="..."  />
+    </div>
+
+    <select id="lista" >
+        <option value="k">
+            kelvin(K)
+        
+        <option value="c">
+            celcius(C)
+        
+        <option value="f">
+            Fahrenheit(F)
+        
+        <option value="r">
+            Rankine(R)
+        
+    </select>
+
+    
+
+    <div id="container-resul" class="hide">
+        <span class="resultf hide">Fahrenheit(F)<br></span>
+        <span class="resultk hide">Kelvin(K)<br></span>
+        <span class="resultc hide">celcius(C)<br></span>
+        <span class="resultr hide">Rankine(R)<br></span>
+    </div>       
+    
+    <script src="js/script.js"> </script>
+</body>
+</html>
