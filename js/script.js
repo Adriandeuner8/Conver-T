@@ -1,17 +1,7 @@
 
-let clickElement = document.querySelector("#click");
-
-
-let kelvin = document.querySelector("#resultk");
-let celcius = document.querySelector("#resultc");
-let fahrenheit = document.querySelector("#resultf");
-let rankine = document.querySelector("#resultr");
-
-let containerResult = document.querySelector("#container-resul");
-
-
 function clickFunction(){
     
+    let mostraResult = document.querySelector("#container-result");
     let valorElement = parseFloat(document.querySelector("#valor").value);
     let lista = document.getElementById("lista").value;    
     let fahrenheit, kelvin, celcius, rankine;
@@ -71,8 +61,10 @@ function clickFunction(){
         break;
         default:
             console.log(Erro);
+        break;
     
     }
-    
-}
-
+    if (mostraResult.style.display == "none") {
+        mostraResult.style.display = "flex";
+    } 
+};

@@ -56,23 +56,28 @@ body{
     font-size: 13px;
 }
 
-#container-resul {
+#container-result{
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     margin-top: 40px;
-    width: 100%;
+    width: 650px;
     padding: 10px; 
     text-align: center;
+    gap: 5px;
     background-color: #ffffff;
 }
-
-.hide {
-    /display:none;
+@media screen and (max-width: 700px){
+    #container-result{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 25px;
+    }    
 }
-
+    
 .resultk {
-    width: calc(25% - 10px); 
+    width: calc(27% - 10px); 
     text-align: center;
     border: 1px solid #313131;
     border-radius: 10px;
@@ -80,7 +85,7 @@ body{
 }
 
 .resultc {
-    width: calc(25% - 10px); 
+    width: calc(27% - 10px); 
     text-align: center;
     border: 1px solid #313131;
     border-radius: 10px;
@@ -88,7 +93,7 @@ body{
 }
 
 .resultf {
-    width: calc(25% - 10px); 
+    width: calc(27% - 10px); 
     text-align:center;
     border: 1px solid #313131;
     border-radius: 10px;
@@ -96,7 +101,7 @@ body{
 }
 
 .resultr {
-    width: calc(25% - 10px); 
+    width: calc(27% - 10px); 
     text-align: center;
     border: 1px solid #313131;
     border-radius: 10px;
